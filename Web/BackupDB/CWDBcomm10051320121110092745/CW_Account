@@ -1,0 +1,1 @@
+update cw_account set AccountDate='2012年02月01日',AccountYear='|2012',StartAccountDate='2012年01月01日',LastCarryDate='2012年01月31日',RealLastCarry='2012年01月',YearCarryVoucher='',YearCarryFlag='',id=id where id='100513'

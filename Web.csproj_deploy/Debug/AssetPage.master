@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="_AssetPage" Codebehind="AssetPage.master.cs" %>
+
+<%@ Register Src="LeftFrame.ascx" TagName="LeftFrame" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>资产管理平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<%--<style type="text/css">html{overflow:hidden;}</style>--%>
+<style type="text/css">
+Body
+{
+SCROLLBAR-FACE-COLOR:#FFCCCC;
+SCROLLBAR-HIGHLIGHT-COLOR:#f6f6f6;
+SCROLLBAR-ARROW-COLOR:green;
+SCROLLBAR-BASE-COLOR:#f6f6f6;
+SCROLLBAR-SHADOW-COLOR:#f6f6f6;
+SCROLLBAR-DARKSHADOW-COLOR:#FFCCCC;
+SCROLLBAR-3DLIGHT-COLOR:#FFCCCC;
+SCROLLBAR-TRACK-COLOR:#f6f6f6;
+}
+</style>
+<style type="text/css">.imcm ul,.imcm li,.imcm div,.imcm span,.imcm a{text-align:left;vertical-align:top;padding:0px;margin:0;list-style:none outside none;border-style:none;background-image:none;clear:none;float:none;display:block;
+position:static;overflow:visible;line-height:normal;}.imcm li a img{display:inline;border-width:0px;}.imcm span{display:inline;}.imcm .imclear,.imclear{clear:both;height:0px;visibility:hidden;line-height:0px;font-size:1px;}
+.imcm .imsc{position:relative;}.imcm .imsubc{position:absolute;visibility:hidden;}.imcm li{list-style:none;font-size:1px;float:left;}.imcm ul ul li{width:100%;float:none !important;}.imcm a{display:block;position:relative;}
+.imcm ul .imsc,.imcm ul .imsubc {z-index:10;}.imcm ul ul .imsc,.imcm ul ul .imsubc{z-index:20;}.imcm ul ul ul .imsc,.imcm ul ul ul .imsubc{z-index:30;}.imde ul li:hover .imsubc{visibility:visible;}
+.imde ul ul li:hover  .imsubc{visibility:visible;}.imde ul ul ul li:hover  .imsubc{visibility:visible;}.imde li:hover ul  .imsubc{visibility:hidden;}.imde li:hover ul ul .imsubc{visibility:hidden;}
+.imde li:hover ul ul ul  .imsubc{visibility:hidden;}.imcm .imea{display:block;position:relative;left:0px;font-size:1px;line-height:1px;height:0px;width:1px;float:right;}
+.imcm .imea span{display:block;position:relative;font-size:1px;line-height:0px;}.dvs,.dvm{border-width:0px}/*\*//*/.imcm .imea{visibility:hidden;}/**/</style><!--[if IE]><style type="text/css">
+.imcm .imea span{position:absolute;}.imcm .imclear,.imclear{display:none;}.imcm{zoom:1;} .imcm li{curosr:hand;} .imcm ul{zoom:1}.imcm a{zoom:1;}</style>
+<![endif]--><!--[if gte IE 7]><style type="text/css">.imcm .imsubc{background-image:url(ie_css_fix);}</style>
+<![endif]-->
+<style type="text/css">
+	/* --[ Main Expand Icons ]-- */
+	#imenus0 .imeam span,#imenus0 .imeamj span {background-image:url(Images/MenuImg/sample3_main_arrow.gif); width:7px; height:5px; left:-7px; top:5px; background-repeat:no-repeat;background-position:top left;}
+	#imenus0 li:hover .imeam span,#imenus0 li a.iactive .imeamj span {background-image:url(Images/MenuImg/sample3_main_arrow.gif); background-repeat:no-repeat;background-position:top left;}
+	/* --[ Sub Expand Icons ]-- */
+	#imenus0 ul .imeas span,#imenus0 ul .imeasj span {background-image:url(Images/MenuImg/sample3_sub_arrow.gif); width:5px; height:7px; left:-5px; top:3px; background-repeat:no-repeat;background-position:top left;}
+	#imenus0 ul li:hover .imeas span,#imenus0 ul li a.iactive .imeasj span {background-image:url(Images/MenuImg/sample3_sub_arrow.gif); background-repeat:no-repeat;background-position:top left;}
+	/* --[ Main Container ]]-- */
+	#imouter0 {background-color:#ffffff; border-style:none; border-color:#6a6a6a; border-width:1px; padding:0px; margin:0px; }
+	/* --[ Sub Container ]]-- */
+	#imenus0 li ul {background-color:#efefef; border-style:solid; border-color:#ff0000; border-width:1px 0px; padding:5px; margin:4px 0px 0px; }
+	/* --[ Main Items ]]-- */
+	#imenus0 li a, #imenus0 .imctitle {color:#333333; text-align:center; font-family:Arial; font-size:12px; font-weight:normal; border-style:solid; border-color:#dddddd; border-width:0px; padding:2px 8px; text-decoration:none; }
+	/* --[ hover ]-- These settings must be duplicated for IE compatibility.*/
+	#imenus0 li:hover>a {background-color:#efefef; }
+	#imenus0 li a.ihover, .imde imenus0 a:hover {background-color:#efefef; text-decoration:none; }
+	/* --[ active ]-- */
+	#imenus0 li a.iactive {background-color:#efefef; text-decoration:none; }
+	/* --[ Sub Items ]-- */
+	#imenus0 ul a, #imenus0 .imsubc li .imctitle  {color:#555555; text-align:left; font-size:11px; font-weight:normal; text-decoration:none; border-style:none; border-color:#000000; border-width:1px; padding:2px 5px; }
+	/* --[ hover ]-- These settings must be duplicated for IE comptatibility.*/
+	#imenus0 ul li:hover>a {color:#000000; text-decoration:none; }
+	#imenus0 ul li a.ihover {color:#000000; text-decoration:none; background:#ffffff; }
+	/* --[ active ]-- */
+	#imenus0 ul li a.iactive {background-color:#ffffff; }
+	#imenus0 {background-color:#f6f6f6; }
+</style>
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+<script type="text/javascript" src="Images/MenuScript.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function Number.prototype.str(s){var a=""+this;return s.substring(0,s.length-a.length)+a;}
+function $(o){return (typeof(o)=="object")?o:document.getElementById(o);}
+function SetFrameUrl(url)
+{
+    $("ctl00_mFrameSrc").value=url;
+    document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href=url;
+}
+function MenuBarClick(v)
+{
+    if(v=="TargetSelf")
+    {
+        location.href='LoginOut.aspx';
+    }
+    else
+    {
+        im_hide();
+        SetFrameUrl(v);
+    }
+}
+function ToolBarClick(v)
+{
+    switch(v)
+    {
+        case -1:
+           location.href='BusinessList.aspx';
+           break;
+        case 0:
+           window.showModalDialog("AccountInit/AccountSubject.aspx?s=s&g="+(new Date()).getTime(),"","dialogWidth=765px;dialogHeight=500px;center=yes;");
+           break;
+        case 1:
+           SetFrameUrl('FixedAsset/ClassManage.aspx');
+           break;
+        case 2:
+           SetFrameUrl('FixedAsset/FixedAssetCard.aspx');
+           break;
+        case 3:
+           SetFrameUrl('FixedAsset/FixedAssetList.aspx');
+           break;
+        case 4:
+           SetFrameUrl('AccountManage/VoucherAM.aspx');
+           break;
+        case 5:
+           SetFrameUrl('AccountManage/VoucherRM.aspx');
+           break;
+        case 6:
+           SetFrameUrl('FixedAsset/CarryMonthDepr.aspx');
+           break;
+        case 7:
+           SetFrameUrl('FixedAsset/FADetailAccount.aspx');
+           break;
+        case 8:
+           SetFrameUrl('FixedAsset/FixedAssetDetail.aspx');
+           break;
+        case 10:
+           SetFrameUrl('Contract/LeaseList.aspx?ctype=0');
+           break;
+        case 11:
+           SetFrameUrl('Contract/TurnFixedAsset.aspx');
+           break;
+        case 12:
+           SetFrameUrl('Contract/DueRemindLease.aspx?ctype=0');
+           break;
+        case 13:
+           SetFrameUrl('Contract/DueRemindPay.aspx?ctype=0');
+           break;
+    }
+}
+//-->
+</script>
+</head>
+<body id="PageBody" class="margin1">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tr>
+                <td class="menubar1" colspan="2" style="height: 20px; background: #f6f6f6" >
+                <div class="imrcmain0 imgl" style="width:100%; z-index:999999;position:relative;">
+                <div class="imcm imde" id="imouter0"><ul id="imenus0">
+                <%=SubMenuList.ToString()%>
+                </ul></div></div>
+                <script type="text/javascript" src="Images/MenuImg/ocscript.js"></script>
+                </td>
+            </tr>
+            <tr>
+                <td class="t2" colspan="2" style="height: 52px; background-image:url(Images/ToolbarImg/bg.jpg)">
+                    <table cellpadding="0" cellspacing="0" style="top:15px">
+                      <tr style="height:45px">
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(2);">
+                        <img src="Images/ToolbarImg/zichankapian.gif" alt="" /><br />资产录入</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(3);">
+                        <img src="Images/ToolbarImg/zichankpgl.gif" alt="" /><br />资产管理</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(6);" title="计提制单">
+                        <img src="Images/ToolbarImg/zichanmingxi.gif" alt="" /><br />计提制单</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(11);">
+                        <img src="Images/ToolbarImg/zichanjiti.gif" alt="" /><br />资产流转</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(10);">
+                        <img src="Images/ToolbarImg/zulinguanli.gif" alt="" /><br />合同管理</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(12);">
+                        <img src="Images/ToolbarImg/ziyuandaoqi.gif" alt="" /><br />合同到期查询</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(13);">
+                        <img src="Images/ToolbarImg/ziyuanskdq.gif" alt="" /><br />收款到期查询</td>
+                        <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(7);">
+                        <img src="Images/ToolbarImg/zichanmxz.gif" alt="" /><br />资产明细账</td>
+                        <td class="toolbar2" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar2';" onclick="ToolBarClick(-1);">
+                        <img src="Images/ToolbarImg/home.gif" alt="" /><br />返回首页</td>
+                      </tr>
+                    </table>
+                 </td>
+            </tr>
+            <tr>
+                <td class="t1" style="width: 203px; text-align: center;" valign="top"><uc1:LeftFrame id="LeftFrame1" runat="server"></uc1:LeftFrame></td>
+                <td class="t2" style="height: 532px; width: 801px" valign="top"> <div><asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder></div>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <asp:HiddenField ID="mFrameSrc" runat="server" Value="HomePage.aspx" />
+    </form>
+</body>
+</html>

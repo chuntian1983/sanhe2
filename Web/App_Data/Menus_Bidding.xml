@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Menus>
+  <Menu Name="代理申请">
+    <SubMenu Name="代理申请录入" Src="view/daili/AddDaiLi.aspx" />
+    <SubMenu Name="代理申请管理" Src="view/daili/index.aspx" />
+    <SubMenu Name="代理申请打印" Src="view/templates/docfiles.html" />
+  </Menu>
+  <Menu Name="村预算书">
+    <SubMenu Name="村预算书录入" Src="view/zhaobiao/cyss.aspx" />
+    <SubMenu Name="村预算书管理" Src="view/zhaobiao/cyssgl.aspx" />
+    <SubMenu Name="村预算书打印" Src="view/templates/docfiles.html" />
+  </Menu>
+  <Menu Name="招标公告">
+    <SubMenu Name="招标公告录入" Src="view/zhaobiao/zbgg.aspx" />
+    <SubMenu Name="招标公告管理" Src="view/zhaobiao/zbgggl.aspx" />
+    <SubMenu Name="招标公告打印" Src="view/templates/docfiles.html" />
+  </Menu>
+  <Menu Name="参投登记">
+    <SubMenu Name="参投登记表录入" Src="view/zhaobiao/ctdjb.aspx" />
+    <SubMenu Name="参投登记表管理" Src="view/zhaobiao/ctdjbgl.aspx" />
+    <SubMenu Name="参投登记打印" Src="view/templates/docfiles.html" />
+  </Menu>
+  <Menu Name="竞价招投标记录">
+    <SubMenu Name="竞价招投标录入" Src="view/zhaobiao/jjztb.aspx" />
+    <SubMenu Name="竞价招投标管理" Src="view/zhaobiao/jjztbgl.aspx" />
+    <SubMenu Name="竞价招投标记录打印" Src="view/templates/docfiles.html" />
+  </Menu>
+  <Menu Name="中标公告">
+    <SubMenu Name="中标公告录入" Src="view/zhaobiao/zhongb.aspx" />
+    <SubMenu Name="中标公告管理" Src="view/zhaobiao/zbgongggl.aspx" />
+    <SubMenu Name="中标公告打印" Src="view/templates/docfiles.html" />
+  </Menu>
+  <Menu Name="项目管理">
+    <SubMenu Name="项目管理" Src="view/zhaobiao/ProjectManage.aspx" />
+  </Menu>
+  <Menu Name="安全退出" Src="TargetSelf" />
+</Menus>

@@ -1,0 +1,192 @@
+,ID,UnitID,LevelID,AccountNo,AccountName,AccountDate,AccountYear,StartAccountDate,LastCarryDate,RealLastCarry,YearCarryVoucher,YearCarryFlag,Director,SessionID,CTLDateTime,CreateDateTime,IsLock,Define1,Define2,Define3
+,'100300','000002','100300',null,'南刘庄村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100301','000002','100301',null,'王村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100387','000005','100389',null,'寺岗村','2010年10月18日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','qvklrl45i0e3yfivnbv23r55','24/10/2010 10:47:22',null,null,null,null,null
+,'100330','000003','100330',null,'五公','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜','l2jj30553g0cxo55dgypx455','20/9/2010 10:42:10',null,null,null,null,null
+,'100331','000003','100331',null,'邹村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100372','000007','100371',null,'葛同岳','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏',null,null,null,null,null,null,null
+,'100302','000002','100302',null,'西支沃村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100009','000007','100356',null,'一致合村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明',null,null,null,null,null,null,null
+,'100406','000009','100406',null,'合伯村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'李志国',null,null,null,null,null,null,null
+,'100425','000004','100427',null,'郑庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'贾丽显','ljnybd55kn20ti45q0htfa55','19/10/2010 15:27:06',null,null,null,null,null
+,'100424','000004','100426',null,'张村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'贾丽显','ljnybd55kn20ti45q0htfa55','19/10/2010 15:25:05',null,null,null,null,null
+,'100308','000002','100308',null,'北关村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100303','000002','100303',null,'西关村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100305','000002','100305',null,'东关村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100306','000002','100306',null,'端午村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100307','000002','100307',null,'官佐村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100021','000009','100021',null,'合方村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'王车箱','uali0m4533rlf345lhozg245','12/10/2010 10:59:55',null,null,null,null,null
+,'100024','000006','100024',null,'小堤','2010年05月01日','|2010','2010年05月01日',null,null,null,null,'李雪礼','v2tqck55rvxxg555tqtmtdm0','27/9/2010 15:11:23',null,null,null,null,null
+,'100309','000002','100309',null,'罗屯村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100031','000007','100009',null,'张苑村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红','iranypeppdrwri45n1b5ghfc','19/10/2010 09:08:34',null,null,null,null,null
+,'100362','000007','100359',null,'横头','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明',null,null,null,null,null,null,null
+,'100047','000006','100047',null,'里满','2010年05月01日','|2010','2010年05月01日',null,null,null,null,'雪礼',null,null,null,null,null,null,null
+,'100040','000007','100366',null,'范苑村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏',null,null,null,null,null,null,null
+,'100049','000009','100049',null,'南岩','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'肖广增','30qm4l55dlhcnqq4bxkdalrm','12/10/2010 10:49:29',null,null,null,null,null
+,'100046','000007','100355',null,'杨池村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明','3lq1mpzxmtvdgu55ck5lg145','14/10/2010 09:11:15',null,null,null,null,null
+,'100045','000007','100365',null,'引各庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏','eoyp5j55iaceclvzaq0ops45',null,null,null,null,null,null
+,'100298','000002','100298',null,'南关村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100299','000002','100299',null,'田庄村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100297','000002','100297',null,'张铺村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100388','000005','100390',null,'孔店村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:47:30',null,null,null,null,null
+,'100296','000002','100296',null,'故城村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100295','000002','100295',null,'菜园村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100294','000002','100294',null,'富村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100063','000006','100063',null,'王屯',null,null,null,null,null,null,null,'范永强',null,null,null,null,null,null,null
+,'100391','000005','100393',null,'东刘庄村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:44:44',null,null,null,null,null
+,'100392','000005','100394',null,'西迁民庄村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:44:19',null,null,null,null,null
+,'100421','000004','100423',null,'大王庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'葛稳妥','ljnybd55kn20ti45q0htfa55',null,null,null,null,null,null
+,'100069','000006','100069',null,'大曹庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'雪礼','x2afluy3cq4ag455brzcskqk','16/9/2010 10:32:46',null,null,null,null,null
+,'100076','000007','100373',null,'崔口村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏','fvb43syrv4zruo55up3pirja','12/10/2010 16:57:42',null,null,null,null,null
+,'100089','000006','100089',null,'曹庄','2010年10月01日','|2010','2010年09月01日','2010年09月30日','2010年09月',null,null,'123','vip0jayeduowmu45rmfmrj55','16/9/2010 17:59:45',null,null,null,null,null
+,'100074','000006','100074',null,'北韩村','2010年11月01日','|2010','2010年09月01日','2010年10月31日','2010年10月',null,null,'李雪礼','q44cth45qzc4yk3kerm4ttfl','28/9/2010 15:44:15',null,null,null,null,null
+,'100400','000004','100400',null,'尹村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55','19/10/2010 15:41:12',null,null,null,null,null
+,'100381','000005','100383',null,'李岗村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'纪路开',null,null,null,null,null,null,null
+,'100081','000009','100081',null,'东尹村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'尹同谦','fdj14n55kibhkkqeu5trt255',null,null,null,null,null,null
+,'100082','000009','100082',null,'西尹村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'尹三喜',null,null,null,null,null,null,null
+,'100423','000004','100424',null,'南北岩','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'贾丽显','ljnybd55kn20ti45q0htfa55','19/10/2010 15:20:28',null,null,null,null,null
+,'100384','000005','100386',null,'西岐河村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:48:12',null,null,null,null,null
+,'100385','000005','100387',null,'北岐河村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','tmkrluynumjnhzf3agzhhj55','26/10/2010 14:03:29',null,null,null,null,null
+,'100386','000005','100388',null,'孟岗村','2010年09月30日','|2010','2010年09月30日',null,'2010年09月',null,null,'纪路开','ldp2u4iqgabt5aqkangs3u45','25/10/2010 09:47:19',null,null,null,null,null
+,'100119','000005','100120',null,'河头村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100382','000005','100384',null,'安岗村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','hwmeiu45v4h44a3fexh11s45','26/10/2010 13:44:49',null,null,null,null,null
+,'100112','000005','100113',null,'东张岗村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心','0l0jpt45q5hcllro524tds45','26/9/2010 16:35:45',null,null,null,null,null
+,'100374','000005','100374',null,'西张岗村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100114','000005','100118',null,'高口','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心','b0c5z024saruczijvtyjne2c','13/10/2010 09:09:49',null,null,null,null,null
+,'100115','000006','100115',null,'大城北','2010年10月01日','|2010','2010年09月01日','2010年09月30日','2010年09月',null,null,'雪礼','vip0jayeduowmu45rmfmrj55','16/9/2010 18:11:36',null,null,null,null,null
+,'100116','000006','100116',null,'桑园','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'雪礼','pxmtlpj4zir1bb553cliyxrs','16/9/2010 11:07:59',null,null,null,null,null
+,'100118','000005','100119',null,'套里村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100121','000005','100121',null,'王岗村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100122','000005','100122',null,'大何庄','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100123','000005','100123',null,'小官亭村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100124','000005','100124',null,'姚庄村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100125','000005','100125',null,'西刘庄','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100126','000005','100126',null,'徐庄村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100127','000005','100127',null,'后铺村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100128','000005','100128',null,'前铺村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'冯顺心',null,null,null,null,null,null,null
+,'100394','000005','100399',null,'万里村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'纪路开',null,null,null,null,null,null,null
+,'100184','000008','100186',null,'东合村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100183','000008','100185',null,'北合村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100182','000008','100184',null,'南合村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100181','000008','100183',null,'屯里村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100180','000008','100182',null,'东韩村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100179','000008','100181',null,'高邵村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100178','000008','100180',null,'大邵村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100177','000008','100179',null,'常安村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100176','000008','100178',null,'团里村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100175','000008','100177',null,'西段村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100174','000008','100176',null,'东段村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100173','000008','100175',null,'西召市','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100172','000008','100174',null,'东召市','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100171','000008','100173',null,'北善旺','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台','updwat45kzpdjurttqtu3ozh','28/9/2010 10:43:14',null,null,null,null,null
+,'100170','000008','100172',null,'南善旺','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100169','000008','100171',null,'豆店村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100168','000008','100170',null,'肖店村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100167','000008','100169',null,'西九吉','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100185','000008','100188',null,'中合村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100186','000008','100187',null,'西合村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100187','000008','100189',null,'影林村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100188','000008','100190',null,'东崔村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100189','000008','100191',null,'西崔村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100190','000008','100192',null,'胜利村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100191','000008','100193',null,'堤下村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100192','000008','100194',null,'合束村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100193','000008','100195',null,'牛留吾','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100194','000008','100196',null,'苌留吾','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100195','000008','100197',null,'王留吾','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100196','000008','100198',null,'赵留吾','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100197','000008','100199',null,'北留吾','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100198','000008','100396',null,'东留吾','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100199','000008','100405',null,'合我村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台',null,null,null,null,null,null,null
+,'100393','000005','100397',null,'段庄村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:43:33',null,null,null,null,null
+,'100292','000002','100292',null,'曹庄村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100293','000002','100293',null,'白池村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100390','000005','100392',null,'范娄李村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:46:50',null,null,null,null,null
+,'100389','000005','100391',null,'大官亭村','2010年10月01日','|2010','2010年09月30日','2010年09月30日','2010年09月',null,null,'纪路开','zqy2vv455nvwmj552rbvhjya','26/10/2010 10:33:49',null,null,null,null,null
+,'100371','000007','100370',null,'王同岳','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏',null,null,null,null,null,null,null
+,'100310','000002','100310',null,'孔君道村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100311','000002','100311',null,'东支沃村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,'ptow4sugzi0erbee5hpg0prw','20/9/2010 16:39:14',null,null,null,null,null
+,'100383','000005','100385',null,'东岐河村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'纪路开','eptcz5r4zc1lvnee1mjsly3i','24/10/2010 09:48:33',null,null,null,null,null
+,'100396','000008','100166',null,'留楚村','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台','rsvbg155sf0exmqxtk2dlkia','19/10/2010 19:44:55',null,null,null,null,null
+,'100312','000002','100312',null,'段君道村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100313','000002','100313',null,'耿各庄村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100314','000002','100314',null,'李池村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100315','000002','100315',null,'东草芦村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100316','000002','100316',null,'圈子村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,'hadrzx55g0ysezuazgpnsx45','20/9/2010 15:59:52',null,null,null,null,null
+,'100317','000002','100317',null,'西村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100318','000002','100318',null,'牛村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100319','000002','100319',null,'西草芦村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100320','000002','100320',null,'邵村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100321','000002','100321',null,'胡村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100322','000002','100322',null,'君乡村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,'voyck0aryb1usm55gx04lm45','26/9/2010 16:19:03',null,null,null,null,null
+,'100323','000002','100323',null,'良见村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100324','000002','100324',null,'朱池村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100325','000002','100325',null,'褚庄村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100326','000002','100326',null,'东北街村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100327','000002','100327',null,'西南街村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100328','000002','100328',null,'张池村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100329','000002','100329',null,'刘各庄村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100332','000003','100332',null,'南官庄','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100333','000003','100333',null,'东送','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100334','000003','100334',null,'杨各庄','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100335','000003','100335',null,'王桥','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100336','000003','100336',null,'宋桥','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100337','000003','100337',null,'高桥','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100338','000003','100342',null,'南马','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100339','000003','100343',null,'北马','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100340','000003','100338',null,'元子','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100341','000003','100344',null,'南张保','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100342','000003','100345',null,'北张保','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100343','000003','100347',null,'贾张保','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100344','000003','100346',null,'许张保','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100345','000003','100348',null,'西张保','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100346','000003','100349',null,'沃地','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100347','000003','100350',null,'北官庄','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100348','000003','100339',null,'耿口','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100349','000003','100340',null,'南善','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100350','000003','100341',null,'北善','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'魏娜',null,null,null,null,null,null,null
+,'100351','000002','100351',null,'测试村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,null,null,null,null,null,null,null,null
+,'100352','000007','100031',null,'马屯','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红','mtubax55cfwead55snplxvfp',null,null,null,null,null,null
+,'100353','000007','100040',null,'北京堂','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红','xnjepm455almlg55drkjad3o',null,null,null,null,null,null
+,'100354','000007','100045',null,'圣水','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红',null,null,null,null,null,null,null
+,'100355','000007','100046',null,'刘苑村','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红','mtubax55cfwead55snplxvfp',null,null,null,null,null,null
+,'100356','000007','100076',null,'单铺','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红',null,null,null,null,null,null,null
+,'100357','000007','100352',null,'李庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红',null,null,null,null,null,null,null
+,'100358','000007','100353',null,'南京堂','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红',null,null,null,null,null,null,null
+,'100359','000007','100354',null,'张口','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'杨富红',null,null,null,null,null,null,null
+,'100360','000007','100357',null,'程各庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明',null,null,null,null,null,null,null
+,'100361','000007','100358',null,'寨子','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明','ws052gndjuhriqrgzg10l455',null,null,null,null,null,null
+,'100363','000007','100360',null,'杨君道','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明','ws052gndjuhriqrgzg10l455',null,null,null,null,null,null
+,'100364','000007','100362',null,'王庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明',null,null,null,null,null,null,null
+,'100365','000007','100363',null,'路同岳','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明',null,null,null,null,null,null,null
+,'100366','000007','100364',null,'辛庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明',null,null,null,null,null,null,null
+,'100367','000007','100361',null,'段口','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'周明','ws052gndjuhriqrgzg10l455',null,null,null,null,null,null
+,'100368','000007','100367',null,'崔池','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏','r0hmh355bvdeco2cv54veov0','18/10/2010 20:46:28',null,null,null,null,null
+,'100369','000007','100368',null,'马庄','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏','js5o0m311wenbn4520dy0znl',null,null,null,null,null,null
+,'100370','000007','100369',null,'徐同岳','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏',null,null,null,null,null,null,null
+,'100373','000007','100372',null,'杨口','2010年09月01日','|2010','2010年09月01日',null,null,null,null,'李晓敏','zsbpsprnjdfxb245ri5wce45',null,null,null,null,null,null
+,'100405','000008','100168',null,' 东九吉','2010年08月31日','|2010','2010年08月31日',null,null,null,null,'李艳台','updwat45kzpdjurttqtu3ozh','28/9/2010 08:51:28',null,null,null,null,null
+,'100399','000005','100382',null,'邢岗村','2010年09月30日','|2010','2010年09月30日',null,null,null,null,'纪路开',null,null,null,null,null,null,null
+,'100419','000004','100421',null,'西王庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'葛稳妥','ljnybd55kn20ti45q0htfa55','19/10/2010 14:58:27',null,null,null,null,null
+,'100402','000004','100402',null,'北北岩','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55','19/10/2010 15:42:28',null,null,null,null,null
+,'100403','000004','100403',null,'北流满','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55','19/10/2010 15:43:42',null,null,null,null,null
+,'100407','000009','100407',null,'南师钦','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'侯进源',null,null,null,null,null,null,null
+,'100408','000009','100408',null,'北师钦','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'孙红兵',null,null,null,null,null,null,null
+,'100409','000009','100409',null,'中师钦','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'翟志刚',null,null,null,null,null,null,null
+,'100410','000009','100410',null,'东万艾','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'孙永亮',null,null,null,null,null,null,null
+,'100411','000004','100411',null,'东风庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55','19/10/2010 15:46:13',null,null,null,null,null
+,'100412','000004','100412',null,'大迁民','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55','19/10/2010 15:49:38',null,null,null,null,null
+,'100413','000004','100413',null,'东何庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55','19/10/2010 15:53:49',null,null,null,null,null
+,'100414','000009','100414',null,'西万艾','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'薛伦青',null,null,null,null,null,null,null
+,'100415','000009','100415',null,'流班寨','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'孙占怀',null,null,null,null,null,null,null
+,'100416','000009','100416',null,'大齐','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'张振动',null,null,null,null,null,null,null
+,'100417','000009','100417',null,'南空城','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'李廷芝',null,null,null,null,null,null,null
+,'100418','000009','100418',null,'北空城','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'祝瑞征',null,null,null,null,null,null,null
+,'100426','000004','100425',null,'索庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'葛稳妥','ljnybd55kn20ti45q0htfa55','19/10/2010 15:23:28',null,null,null,null,null
+,'100427','000004','100428',null,'大宫殿','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'贾丽显','ljnybd55kn20ti45q0htfa55','19/10/2010 15:31:20',null,null,null,null,null
+,'100428','000004','100429',null,'留名佛','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'贾丽显','ljnybd55kn20ti45q0htfa55','19/10/2010 15:32:40',null,null,null,null,null
+,'100429','000004','100430',null,'吾固','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'贾丽显','ljnybd55kn20ti45q0htfa55','19/10/2010 15:34:33',null,null,null,null,null
+,'100430','000004','100419',null,'高村','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'赵春丽','ljnybd55kn20ti45q0htfa55',null,null,null,null,null,null
+,'100431','000004','100431',null,'南流满','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'葛稳妥','ljnybd55kn20ti45q0htfa55','19/10/2010 15:36:13',null,null,null,null,null
+,'100432','000004','100432',null,'吕汉','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'葛稳妥','ljnybd55kn20ti45q0htfa55','19/10/2010 15:37:35',null,null,null,null,null
+,'100433','000004','100433',null,'娄庄','2010年09月20日','|2010','2010年09月20日',null,null,null,null,'葛稳妥','ljnybd55kn20ti45q0htfa55','19/10/2010 15:38:46',null,null,null,null,null

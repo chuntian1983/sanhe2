@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="_MonitorPage" Codebehind="MonitorPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>农村电子监察平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<%--<style type="text/css">html{overflow:hidden;}</style>--%>
+<style type="text/css">
+Body
+{
+SCROLLBAR-FACE-COLOR:#FFCCCC;
+SCROLLBAR-HIGHLIGHT-COLOR:#f6f6f6;
+SCROLLBAR-ARROW-COLOR:green;
+SCROLLBAR-BASE-COLOR:#f6f6f6;
+SCROLLBAR-SHADOW-COLOR:#f6f6f6;
+SCROLLBAR-DARKSHADOW-COLOR:#FFCCCC;
+SCROLLBAR-3DLIGHT-COLOR:#FFCCCC;
+SCROLLBAR-TRACK-COLOR:#f6f6f6;
+}
+</style>
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+<script type="text/javascript" src="Images/MenuScript.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function $(o){return (typeof(o)=="object")?o:document.getElementById(o);}
+var outlookbar=new outlook();
+var tempinnertext1,tempinnertext2,outlooksmoothstat;
+outlooksmoothstat = 0;
+<%=scriptstring%>
+//-->
+</script>
+</head>
+<body class="margin0">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="width: 1004px">
+            <tr style="height:606px">
+                <td class="t1" style="width: 202px;" valign="top">
+                <table>
+                    <tr>
+                        <td style="width:202px; height:<%=MenuHeight %>px">
+                            <script language="JavaScript" type="text/javascript">
+                              <!--
+                              locatefold("");outlookbar.show();
+                              //-->
+                            </script>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                <td class="t r" style="height: 605px; width:880px" valign="top">
+                    <div><asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder></div>
+                </td>
+            </tr>
+        </table>
+     </div>
+    </form>
+</body>
+</html>

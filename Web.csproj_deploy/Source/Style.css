@@ -1,0 +1,18 @@
+body{background:#fff;text-align:center;}
+table{font-size:13px;line-height:150%; font-family:ËÎÌו; color:#333;}
+.input {
+	BORDER-RIGHT: #94c6e1 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #94c6e1 1px solid; PADDING-LEFT: 5px; 
+	FONT-WEIGHT: bold; BACKGROUND: #fff; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #94c6e1 1px solid; COLOR: #22ac38; PADDING-TOP: 5px; BORDER-BOTTOM: #94c6e1 1px solid;
+	FONT-SIZE: 13px;
+}
+
+a:link {color:#002277; text-decoration:none}
+a:visited {color:#002277; text-decoration:none}
+a:hover {color:#CC0000; text-decoration:underline}
+a:active {color:#CC0000; text-decoration:underline}
+
+.tableTitle{font-weight:bold;
+}
+.tableContent{text-align:left;}
+.tableTitle2{font-weight:bold;text-align:center;}
+.tipMsg{color:red;}

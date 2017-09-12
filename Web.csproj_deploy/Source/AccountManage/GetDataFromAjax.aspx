@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="AccountInit_GetDataFromAjax" Codebehind="GetDataFromAjax.aspx.cs" %>

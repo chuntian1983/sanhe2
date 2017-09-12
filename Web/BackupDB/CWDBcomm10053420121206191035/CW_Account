@@ -1,0 +1,1 @@
+update cw_account set AccountDate='',AccountYear='',StartAccountDate='',LastCarryDate='',RealLastCarry='',YearCarryVoucher='',YearCarryFlag='',id=id where id='100534'

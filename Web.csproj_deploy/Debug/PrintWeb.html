@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Report Printing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+</head>
+<body style="margin:0px">
+</body>
+</html>
+<script type="text/javascript">
+var sstr="<!--NoPrintStart-->";
+var estr="<!--NoPrintEnd-->";
+var h=window.opener.document.body.innerHTML;
+while((i=h.indexOf(sstr))!=-1)
+{
+    h=h.substring(0,i)+h.substr(h.indexOf(estr)+17);
+}
+h=h.replace(/(onclick|ondblclick|onmouseout|onmouseover)=["|']?[^"]*?["|']?/g,"");
+h=h.replace(/BACKGROUND-COLOR: #f6f6f6/g,"");
+window.document.body.innerHTML=h;
+</script>

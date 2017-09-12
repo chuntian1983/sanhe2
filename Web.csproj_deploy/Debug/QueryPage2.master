@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="_QueryPage2" Codebehind="QueryPage2.master.cs" %>
+
+<%@ Register Src="UnitList2.ascx" TagName="LeftFrame" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>村级查询平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<%--<style type="text/css">html{overflow:hidden;}</style>--%>
+<style type="text/css">
+Body
+{
+SCROLLBAR-FACE-COLOR:#FFCCCC;
+SCROLLBAR-HIGHLIGHT-COLOR:#f6f6f6;
+SCROLLBAR-ARROW-COLOR:green;
+SCROLLBAR-BASE-COLOR:#f6f6f6;
+SCROLLBAR-SHADOW-COLOR:#f6f6f6;
+SCROLLBAR-DARKSHADOW-COLOR:#FFCCCC;
+SCROLLBAR-3DLIGHT-COLOR:#FFCCCC;
+SCROLLBAR-TRACK-COLOR:#f6f6f6;
+}
+</style>
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+<script language="JavaScript" type="text/javascript">
+<!--
+function $(o){return (typeof(o)=="object")?o:document.getElementById(o);}
+function OpenUrl(url)
+{
+    if (document.getElementById("ctl00_LeftFrame1_UT").value != "1") {
+        alert("请选择站点！");
+        togglem(0);
+        return;
+    }
+    document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href=url;
+}
+function togglem(v) {
+    if (v == 0) {
+        document.getElementById("models").style.display = "none";
+        document.getElementById("units").style.display = "";
+    }
+    else {
+        document.getElementById("models").style.display = "";
+        document.getElementById("units").style.display = "none";
+    }
+}
+function RefreshFrame() {
+
+}
+//-->
+</script>
+</head>
+<body id="PageBody" class="margin1">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tr>
+                <td class="t1" style="width: 203px; text-align: center;" valign="top">
+                <table cellpadding="0" cellspacing="0" style="width: 203px;">
+                    <tr>
+                        <td class="t1" style="background: #f6f6f6; height: 24px; padding-left:7px; text-align:left" colspan="2">
+                            当前站点：<asp:Label ID="AName" runat="server" ForeColor="Red"></asp:Label></td>
+                    </tr>
+                    <tr id="gongkai0" runat="server">
+                        <td class="t1" style="height: 24px; text-align:center">
+                            <span style="cursor:hand" onclick="togglem(0)">选择站点</span></td>
+                        <td class="t1" style="height: 24px; text-align:center">
+                            <span style="cursor:hand" onclick="togglem(1)">公开报表</span></td>
+                    </tr>
+                    <tr id="gongkai1" runat="server" visible="false">
+                        <td class="t1" style="height: 24px; text-align:center">
+                            <span style="cursor:hand">公开报表</span></td>
+                        <td class="t1" style="height: 24px; text-align:center">
+                            <span style="cursor:hand" onclick="location.href='GongKai.aspx'">返回首页</span></td>
+                    </tr>
+                    <tr>
+                        <td class="t3" style="text-align: center; height: 550px; vertical-align:top; text-align:left" colspan="2">
+                        <div style="WIDTH: 100%; HEIGHT: 100%; overflow-y:scroll;">
+                            <div id="models" style="display:none">
+                            <asp:TreeView ID="TreeView1" runat="server" ExpandDepth="1" ImageSet="XPFileExplorer"
+                                NodeIndent="15" ShowLines="True">
+                                <ParentNodeStyle Font-Bold="False" />
+                                <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+                                <SelectedNodeStyle BackColor="#F6F6F6" BorderStyle="Solid" BorderWidth="1px" Font-Underline="False"
+                                    HorizontalPadding="0px" VerticalPadding="0px" />
+                                <Nodes>
+                                    <asp:TreeNode SelectAction="None" Text="村级查询模块" Value="000000"></asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="2px"
+                                    NodeSpacing="0px" VerticalPadding="2px" />
+                            </asp:TreeView>
+                            </div>
+                            <div id="units" style="display:">
+                            <uc1:LeftFrame id="LeftFrame1" runat="server"></uc1:LeftFrame>
+                            </div>
+                        </div>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                <td class="t1" style="height: 606px; width: 801px" valign="top">
+                <div><asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder></div>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

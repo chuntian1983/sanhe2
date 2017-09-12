@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="8" virtualPath="/Web.csproj/global.asax" hash="13e608cd" filehash="164a7a95a26f" flags="150000" assembly="Web.csproj_deploy" type="ASP.global_asax">
+  <filedeps>
+    <filedep name="/Web.csproj/global.asax" />
+  </filedeps>
+</preserve>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SysConfig>
+  <ReportSignName Value="农经 站长 签字$会计服务站签字$村委会主任签字$镇主管领导签字$民主理财小组签章$1" />
+  <DomainUrl Value="192.168.1.19:80" />
+  <InstallDir Value="D:\TestWebSite" />
+  <MySQL_BaseDir Value="D:/Program Files/MySQL/MySQL Server 5.0/" />
+  <MySQL_DataDir Value="D:/Program Files/MySQL/MySQL Server 5.0/Data/" />
+  <SerialNumber Value="BSSZBZ0001.1010476-BAED7C8C" />
+</SysConfig>

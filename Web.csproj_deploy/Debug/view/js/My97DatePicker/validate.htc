@@ -1,0 +1,225 @@
+<PUBLIC:ATTACH EVENT="ondocumentready" ONEVENT="Load()"/>
+<PUBLIC:ATTACH EVENT="onblur" ONEVENT="Htc_OnBlur()"/>
+<PUBLIC:ATTACH EVENT="onfocus" ONEVENT="Htc_OnClick()"/>
+<PUBLIC:ATTACH EVENT="onpropertychange" ONEVENT="Htc_OnPropertyChange()"/>
+<SCRIPT LANGUAGE="JScript">
+var oVPopup;
+function Load()
+{
+  	oVPopup = window.createPopup();
+	//oVPopup.document.body.scroll="no";
+	//alert(0)
+	if(element.title!=""&&(element.value==""||element.value==element.title))
+	{
+		element.style.color="#cccccc";
+		element.value=element.title;
+	}
+}
+function Htc_OnClick()
+{
+	element.style.color="#000000";
+	if(element.value.replace(/\s/g,"")==element.title)
+		element.value="";
+}
+function Htc_OnBlur()
+{
+	if(element.title!=""&&(element.value==""||element.value==element.title))
+	{
+		element.value=element.title;
+		element.style.color="#cccccc";
+	}
+	else
+	{
+		element.style.color="#000000";
+	}
+	if(element.valid!=null)
+	{
+		var strBodyHtml="";
+		var ValidType=element.valid.toLowerCase();
+		switch(ValidType)
+		{
+			case "email"://E-Mail
+				if(!IsEmpty(element.value)&&!IsMail(element.value))
+				{
+					strBodyHtml="输入的E-mail格式不正确。";
+					element.value="";
+					element.focus();
+				}
+				break;
+			case "time"://时间（只有时分）
+				element.value=element.value.replace(/：/gi,":");
+				if(!IsEmpty(element.value)&&!IsTime(element.value))
+				{
+					strBodyHtml="输入的时间格式不正确。";
+					element.value="0:0"
+					element.focus();
+				}			
+				break;
+			case "float":
+				var str=element.value;
+				if(!IsEmpty(str)&&!floatingnumber(str))
+				{
+					strBodyHtml="请输大于0的数字。";
+					element.value=""
+					element.focus();
+				}
+				break;
+			case "float0":
+				var str=element.value;
+				if(!IsEmpty(str)&&!NFfloat(str))
+				{
+					strBodyHtml="请输大于等于0的数字。";
+					element.value="";
+					element.focus();
+				}
+				break;
+			default:
+		}
+		if(strBodyHtml!="")
+		{
+			strBodyHtml="<div style=\"width:100%;height:60px;border:solid 1 #eeeeee;font-size:9pt;background:#ffffcc;padding:3pt;color:#ff0000\">"+strBodyHtml+"</div>"
+			//strBodyHtml+="</div>";
+			showPopup(strBodyHtml);	
+		}
+	}
+	if(element.tagName=="TEXTAREA"||element.tagName=="INPUT")
+	{
+		element.value=element.value.replace(/'/gi,"＇");
+		element.value=element.value.replace(/"/gi,"＂");
+		element.value=element.value.replace(/</gi,"＜");
+		element.value=element.value.replace(/>/gi,"＞");
+		element.value=element.value.replace(/\|/gi,"｜");
+	}
+}
+function Htc_OnPropertyChange()
+{
+	if(event.propertyName=="value")
+	{
+		var strBodyHtml="";
+		if(element.tagName!="TEXTAREA"&&element.tagName!="INPUT")
+			return false;
+			
+		if(element.tagName=="TEXTAREA")
+		{
+			if(element.maxLength==null) return false;
+			if(element.title==element.value)
+				return false;	
+			if(element.value.length>element.maxLength)
+			{
+				element.value=element.value.substr(0,element.maxLength)
+				strBodyHtml="此处的文本最多只允许有"+element.maxLength+"个字。";
+			}
+			else
+			{
+				oVPopup.hide();
+			}
+		//alert(0)
+		}
+		else
+		{
+			if(element.tagName=="INPUT")
+			{			
+				if(element.value.length==element.maxLength)
+				{
+					strBodyHtml="此处的文本最多只允许有"+element.maxLength+"个字。";
+				}
+				if(element.valid!=null)
+				{
+					var ValidType=element.valid.toLowerCase();
+					switch(ValidType)
+					{
+						case "name":
+							if(!IsEmpty(element.value)&&!IsValidateString(element.value))
+							{
+								element.value=element.value.replace(/[^_|a-z|A-Z|0-9|\u4e00-\u9fa5]/g,"");
+								strBodyHtml="此处的输入的字符只支持中英文、数字和_。";
+								element.focus();
+							}
+							else
+							{
+								oVPopup.hide();
+							}		
+							break
+						case "intger"://大于等于0的正整数				
+							if(!IsEmpty(element.value)&&!IsNumber(element.value))
+							{
+								strBodyHtml="请输入大于等于0的正整数。";
+								element.value=element.value.replace(/[^\d]/,"");
+								element.focus();
+							}			
+							break;
+						case "number"://大于0的正整数,可以为空	
+							if (!IsEmpty(element.value)&&!naturalnumber(element.value))
+							{
+								strBodyHtml="请输大于0的整数。";
+								element.value=element.value.replace(/[^1-9]/,"");
+								element.focus();
+							}
+							break;
+						default:	
+					}
+					
+				}
+			}
+		}
+		if(strBodyHtml!="")
+		{
+			strBodyHtml="<div style=\"width:100%;height:60px;border:solid 1 #eeeeee;font-size:9pt;background:#ffffcc;padding:3pt;color:#ff0000\">"+strBodyHtml+"</div>"
+			showPopup(strBodyHtml);
+		}
+	}
+}
+
+function showPopup(str)
+{
+	oVPopup.document.body.innerHTML=str;
+	var intWidth=element.offsetWidth;
+	if(intWidth<80) intWidth=80;
+	oVPopup.show(0,element.offsetHeight,intWidth,60,element);
+}
+
+function IsEmpty(str)
+{
+    var rg = /^(\s|　)*$/;
+    return rg.test(str);
+}
+
+function IsMail(mail) 
+{ 
+	return(new RegExp(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/).test(mail)); 
+} 
+function IsValidateString(str)
+{
+    var rg = /^[_|a-z|A-Z|0-9|\u4e00-\u9fa5]*$/;
+    return rg.test(str);
+}
+function IsTime(str)
+{
+	var reg=/^\d{1,2}:\d{1,2}$/g;
+	if(!reg.test(str)) return false;
+	var intHours=str.replace(/^(\d{1,2}):(\d{1,2})$/,"$1");
+	var intMinute=str.replace(/^(\d{1,2}):(\d{1,2})$/,"$2");
+	if(parseInt(intHours,10)>=24) return false;
+	if(parseInt(intMinute,10)>=60) return false;
+	return true;
+}
+
+function IsNumber(str)//非负整数
+{
+	var reg=/^[\d]+$/gi;
+	return reg.test(str)
+}
+function naturalnumber(str)//自然数 正整数
+{
+	var reg=/^[1-9]\d*$/gi;
+	return reg.test(str)
+}
+function floatingnumber(str)//正浮点数
+{
+	return (!isNaN(str)&&parseFloat(str)>0)
+}
+function NFfloat(str)//大于等于0的浮点数
+{
+	return (!isNaN(str)&&parseFloat(str)>=0)
+}
+</SCRIPT>

@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="zhaotoubiao.master.cs" Inherits="SanZi.Web.zhaotoubiao" %>
+
+<%@ Register Src="UnitList.ascx" TagName="LeftFrame" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>招投标管理平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<%--<style type="text/css">html{overflow:hidden;}</style>--%>
+<style type="text/css">
+Body
+{
+SCROLLBAR-FACE-COLOR:#FFCCCC;
+SCROLLBAR-HIGHLIGHT-COLOR:#f6f6f6;
+SCROLLBAR-ARROW-COLOR:green;
+SCROLLBAR-BASE-COLOR:#f6f6f6;
+SCROLLBAR-SHADOW-COLOR:#f6f6f6;
+SCROLLBAR-DARKSHADOW-COLOR:#FFCCCC;
+SCROLLBAR-3DLIGHT-COLOR:#FFCCCC;
+SCROLLBAR-TRACK-COLOR:#f6f6f6;
+}
+</style>
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+<style type="text/css">
+.toolbar2{font-size:8pt;width:45px; text-align:center; border-left:1px solid #f0efec; border-right:1px solid #f0efec;}
+.toolbarover2{font-size:8pt;width:45px; border: 1px solid green;text-align:center;cursor:hand}
+</style>
+<script type="text/javascript" src="Images/MenuScript.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function $(o) { return (typeof (o) == "object") ? o : document.getElementById(o); }
+function RefreshFrame() {
+    return;
+    if ($("ctl00_LeftFrame1_UT").value == "") {
+        alert("请选择单位！");
+        return;
+    }
+    if ($("ctl00_LeftFrame1_UT").value = "0") {
+        document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href = "BidManage/SumList.aspx";
+    }
+    else {
+        if ($("ctl00_mFrameSrc").value == "BidManage/SumList.aspx") {
+            document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href = "HomePage.aspx";
+        }
+        else {
+            document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href = $("ctl00_mFrameSrc").value;
+        }
+    }
+}
+function SetFrameUrl(url) {
+    $("ctl00_mFrameSrc").value = url;
+    document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href = url;
+}
+function ToolBarClick(v) {
+    if (v != -1 && $("ctl00_LeftFrame1_UT").value == "") {
+        alert("请选择单位！");
+        return;
+    }
+    switch (v) {
+        case -1:
+            location.href = 'ztbLogin.aspx';
+            break;
+        case 0:
+            if ($("ctl00_LeftFrame1_UT").value == "0") {
+                SetFrameUrl('BidManage/SumList.aspx');
+            }
+            else {
+                SetFrameUrl('BidManage/Bid2List.aspx');
+            }
+            break;
+        case 10:
+            if ($("ctl00_LeftFrame1_UT").value == "0") {
+                alert("请选择账套！");
+            }
+            else {
+                SetFrameUrl('BidManage/ProjectList.aspx');
+            }
+            break;
+        default:
+            if ($("ctl00_LeftFrame1_UT").value == "0") {
+                alert("请选择账套！");
+            }
+            else {
+                SetFrameUrl('BidManage/BidList.aspx?step=' + v);
+            }
+            break;
+    }
+}
+//-->
+</script>
+</head>
+<body id="PageBody" style="margin:0px">
+    <form id="form1" runat="server">
+    <asp:HiddenField ID="mFrameSrc" runat="server" Value="HomePage.aspx" />
+    <asp:HiddenField ID="MenuFileName" runat="server" Value="Menus_Bidding.xml" />
+    <div>
+        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tr>
+                <td class="t2" colspan="2" style="height: 52px; background-image:url(Images/ToolbarImg/bg.jpg)">
+                    <table cellpadding="0" cellspacing="0" style="top:15px">
+                       <tr>
+                        <td style="height: 52px; background-image:url(Images/ToolbarImg/bg.jpg)">
+                            <table cellpadding="0" cellspacing="0" style="top:15px">
+                              <tr style="height:45px">
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(0);">
+                                <img src="Images/ToolbarImg/subject.gif" alt="" /><br />村民代表会议</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(1);">
+                                <img src="Images/ToolbarImg/setdate.gif" alt="" /><br />招标项目申请</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(2);">
+                                <img src="Images/ToolbarImg/pzluru.gif" alt="" /><br />招标项目审批</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(3);">
+                                <img src="Images/ToolbarImg/recorde.gif" alt="" /><br />预算书</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(4);">
+                                <img src="Images/ToolbarImg/jiezhuan.gif" alt="" /><br />招标文件</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(5);">
+                                <img src="Images/ToolbarImg/summary.gif" alt="" /><br />投标公告</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(6);">
+                                <img src="Images/ToolbarImg/subject.gif" alt="" /><br />参投登记</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(7);">
+                                <img src="Images/ToolbarImg/pzluru.gif" alt="" /><br />竞价招投标</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(8);">
+                                <img src="Images/ToolbarImg/setdate.gif" alt="" /><br />中标公告</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(9);">
+                                <img src="Images/ToolbarImg/jiezhuan.gif" alt="" /><br />签订合同</td>
+                                <td class="toolbar" onmouseover="this.className='toolbarover';" onmouseout="this.className='toolbar';" onclick="ToolBarClick(10);">
+                                <img src="Images/ToolbarImg/zulinguanli.gif" alt="" /><br />项目管理</td>
+                                <td class="toolbar2" onmouseover="this.className='toolbarover2';" onmouseout="this.className='toolbar2';" onclick="ToolBarClick(-1);">
+                                <img src="Images/ToolbarImg/quit.gif" alt="" /><br />退出</td>
+                              </tr>
+                            </table>
+                         </td>
+                       </tr>
+                    </table>
+                 </td>
+            </tr>
+            <tr>
+                <td class="t3" style="width: 203px; text-align: center;" valign="top">
+                <div style="margin-top:1px"><uc1:LeftFrame id="LeftFrame1" runat="server"></uc1:LeftFrame></div></td>
+                <td class="t4" style="height: 550px; width: 100%" valign="top">
+                <asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder></td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>

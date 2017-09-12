@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="_AdminPage" Codebehind="AdminPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>管理员操作平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<%--<style type="text/css">html{overflow:hidden;}</style>--%>
+<style type="text/css">
+Body
+{
+SCROLLBAR-FACE-COLOR:#FFCCCC;
+SCROLLBAR-HIGHLIGHT-COLOR:#f6f6f6;
+SCROLLBAR-ARROW-COLOR:green;
+SCROLLBAR-BASE-COLOR:#f6f6f6;
+SCROLLBAR-SHADOW-COLOR:#f6f6f6;
+SCROLLBAR-DARKSHADOW-COLOR:#FFCCCC;
+SCROLLBAR-3DLIGHT-COLOR:#FFCCCC;
+SCROLLBAR-TRACK-COLOR:#f6f6f6;
+}
+</style>
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+<script type="text/javascript" src="Images/MenuScript.js"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+function $(o){return (typeof(o)=="object")?o:document.getElementById(o);}
+var outlookbar=new outlook();
+var tempinnertext1,tempinnertext2,outlooksmoothstat;
+outlooksmoothstat = 0;
+<%=scriptstring%>
+function ToolBarClick(v)
+{
+    switch(v)
+    {
+        case -1:
+           location.href='LoginOut.aspx';
+           break;
+        case 0:
+           location.href='AdminFrame.aspx?m=0';
+           break;
+        case 1:
+           $('mFrame').src='ChangePassword.aspx';
+           break;
+    }
+}
+function ShowVoucher(bid,aid,vid)
+{
+    window.showModalDialog("AccountManage/LookVoucher.aspx?bid="+bid+"&aid="+aid+"&id="+vid+"&g="+(new Date()).getTime(),"","dialogWidth=767px;dialogHeight=385px;center=yes;");
+    return false;
+}
+var isExpand=true;
+function ToggleMenu()
+{
+    if(isExpand)
+    {
+        isExpand=false;
+        document.getElementById("LeftMenu").style.display="none";
+        document.getElementById("SplitButton").src="Images/split_right.gif";
+    }
+    else
+    {
+        isExpand=true;
+        document.getElementById("LeftMenu").style.display="";
+        document.getElementById("SplitButton").src="Images/split_left.gif";
+    }
+}
+//-->
+</script>
+</head>
+<body class="margin0">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="width: 1003px">
+            <tr>
+                <td colspan="3" style="height: 52px; background-image:url(Images/ToolbarImg/bg.jpg)">
+                    <table cellpadding="0" cellspacing="0" style="top:15px">
+                      <tr style="height:45px;">
+                        <td class="toolbar3" onmouseover="this.className='toolbarover3';" onmouseout="this.className='toolbar3';" onclick="ToolBarClick(0);">
+                        <img src="Images/AdminImg/sysmanage.gif" alt="" />系统管理</td>
+                        <td class="toolbar3" onmouseover="this.className='toolbarover3';" onmouseout="this.className='toolbar3';" onclick="ToolBarClick(1);">
+                        <img src="Images/AdminImg/changepwd.gif" alt="" />密码修改</td>
+                        <td class="toolbar4" onmouseover="this.className='toolbarover3';" onmouseout="this.className='toolbar4';" onclick="ToolBarClick(-1);">
+                        <img src="Images/AdminImg/quit.gif" alt="" />安全退出</td>
+                        <td style="width:130px;">&nbsp;</td>
+                      </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height:556px">
+                <td id="LeftMenu" class="t1" style="width: 201px;" valign="top">
+                    <table>
+                        <tr>
+                            <td style="width:201px; height:<%=MenuHeight %>px">
+                                <script language="JavaScript" type="text/javascript">
+                                  <!--
+                                  locatefold("");outlookbar.show();
+                                  //-->
+                                </script>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td id="SplitBar" style="width: 20px; border-top: 1px solid #FFCCCC; cursor:hand" onclick="ToggleMenu()" onmouseover="this.style.backgroundColor='#f8f8f8';" onmouseout="this.style.backgroundColor='';">
+                    <img id="SplitButton" src="Images/split_left.gif" alt="" />
+                </td>
+                <td class="t r" style="height: 555px; width:100%" valign="top">
+                    <div><asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder></div>
+                </td>
+            </tr>
+        </table>
+     </div>
+    <div style="position:absolute;right:0;width:400px;height:251px;border:1px solid black;background-color:#f6f6f6;" id="showmsg" runat="server" visible="false">
+    <table cellpadding="0" cellspacing="0" style="width:100%">
+        <tr>
+            <td style="width:90%;height:30px;text-align:left;border-bottom:1px solid black;">&nbsp;【预警信息】</td>
+            <td style="width:10%;text-align:center;border-bottom:1px solid black;cursor:hand" onclick="$('ctl00_showmsg').style.display='none';">
+            <img alt="" src="Images/close.gif" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <div style="width:100%;height:220px;overflow-y:scroll;vertical-align:top">
+            <%=DueContracts.ToString() %>
+            </div>
+            </td>
+        </tr>
+    </table>
+    </div>
+    <script type="text/javascript">
+    function rightBottomAd()
+    {
+        var abc = document.getElementById("ctl00_showmsg");
+        if(abc)
+        {
+            abc.style.top = document.documentElement.scrollTop+document.documentElement.clientHeight-abc.offsetHeight+"px"; 
+            setTimeout(function(){rightBottomAd();},50);
+        }
+    }
+    rightBottomAd();
+    </script>
+    </form>
+</body>
+</html>

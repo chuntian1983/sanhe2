@@ -1,0 +1,42 @@
+﻿<Design>
+  <Report>
+    <ID>200001</ID>
+    <TableName>货币一览表</TableName>
+    <HeadString>所属村组,银行存款账面数,银行存款实存数,库存现金账面数,库存现金实存数</HeadString>
+    <GatherCells></GatherCells>
+    <ColumnWidth>150,150,150,150,150</ColumnWidth>
+    <HAlign>lrrrr</HAlign>
+  </Report>
+  <Report>
+    <ID>200002</ID>
+    <TableName>资产公开</TableName>
+    <HeadString>资产名称,坐落位置,种类,清理情况（净值）</HeadString>
+    <GatherCells></GatherCells>
+    <ColumnWidth>150,350,100,150</ColumnWidth>
+    <HAlign>llcr</HAlign>
+  </Report>
+  <Report>
+    <ID>200003</ID>
+    <TableName>资源公开</TableName>
+    <HeadString>资源名称,坐落位置,经营方式,面积</HeadString>
+    <GatherCells></GatherCells>
+    <ColumnWidth>150,350,100,150</ColumnWidth>
+    <HAlign>llcr</HAlign>
+  </Report>
+  <Report>
+    <ID>010001</ID>
+    <TableName>总账，明细账，日记账（纵）</TableName>
+    <HeadString>,,凭证字,,摘             要,发    生    额,,方向,余额|月,日,字,号,,借方,贷方,,</HeadString>
+    <GatherCells>0,0:0,1|0,2:0,3|0,4:1,4|0,5:0,6|0,7:1,7|0,8:1,8</GatherCells>
+    <ColumnWidth>15,15,35,45,290,100,100,15,100</ColumnWidth>
+    <HAlign>cccclrrcr</HAlign>
+  </Report>
+  <Report>
+    <ID>010017</ID>
+    <TableName>总账，明细账，日记账（横）</TableName>
+    <HeadString>,,凭证字,,摘             要,发    生    额,,方向,余额|月,日,字,号,,借方,贷方,,</HeadString>
+    <GatherCells>0,0:0,1|0,2:0,3|0,4:1,4|0,5:0,6|0,7:1,7|0,8:1,8</GatherCells>
+    <ColumnWidth>15,15,35,45,390,150,150,35,150</ColumnWidth>
+    <HAlign>cccclrrcr</HAlign>
+  </Report>
+</Design>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Menus>
+  <Menu Name="村民代表会议记录">
+    <SubMenu Name="代理申请录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=1" />
+    <SubMenu Name="代理申请管理" Src="view/zhaotoubiao/list.aspx?zt=1" />
+
+  </Menu>
+  <Menu Name="招标项目申请">
+    <SubMenu Name="村预算书录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=2" />
+    <SubMenu Name="村预算书管理" Src="view/zhaotoubiao/list.aspx?zt=2" />
+   
+  </Menu>
+  <Menu Name="招标项目审批">
+    <SubMenu Name="招标公告录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=3" />
+    <SubMenu Name="招标公告管理" Src="view/zhaotoubiao/list.aspx?zt=3" />
+  
+  </Menu>
+  <Menu Name="预算书录入">
+    <SubMenu Name="参投登记表录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=4" />
+    <SubMenu Name="参投登记表管理" Src="view/zhaotoubiao/list.aspx?zt=4" />
+   
+  </Menu>
+  <Menu Name="招标文件录入">
+    <SubMenu Name="竞价招投标录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=5" />
+    <SubMenu Name="竞价招投标管理" Src="view/zhaotoubiao/list.aspx?zt=5" />
+    
+  </Menu>
+  <Menu Name="投标公告">
+    <SubMenu Name="中标公告录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=6" />
+    <SubMenu Name="中标公告管理" Src="view/zhaotoubiao/list.aspx?zt=6" />
+  
+  </Menu>
+  <Menu Name="参投登记">
+    <SubMenu Name="中标公告录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=7" />
+    <SubMenu Name="中标公告管理" Src="view/zhaotoubiao/list.aspx?zt=7" />
+  </Menu>
+  <Menu Name="竞价招投标">
+    <SubMenu Name="中标公告录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=8" />
+    <SubMenu Name="中标公告管理" Src="view/zhaotoubiao/list.aspx?zt=8" />
+  </Menu>
+  <Menu Name="中标公告">
+    <SubMenu Name="中标公告录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=9" />
+    <SubMenu Name="中标公告管理" Src="view/zhaotoubiao/list.aspx?zt=9" />
+  </Menu>
+  <Menu Name="签订合同">
+    <SubMenu Name="中标公告录入" Src="view/zhaotoubiao/add_cmdb.aspx?zt=10" />
+    <SubMenu Name="中标公告管理" Src="view/zhaotoubiao/list.aspx?zt=10" />
+  </Menu>
+  <Menu Name="安全退出" Src="TargetSelf" />
+</Menus>

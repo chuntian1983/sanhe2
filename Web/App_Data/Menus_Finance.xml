@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Menus>
+  <Menu Name="账务初始">
+    <SubMenu Name="科目表维护" Src="AccountInit/AccountSubject.aspx" />
+    <SubMenu Name="科目表分组" Src="AccountInit/SubjectGroup.aspx" />
+    <SubMenu Name="常用摘要维护" Src="AccountInit/SummaryManage.aspx" />
+    <SubMenu Name="全年预算设置" Src="AccountInit/SujectBudget.aspx" />
+    <SubMenu Name="账套信息设置" Src="AccountInit/SetAccountPara.aspx" />
+    <SubMenu Name="操作日志查询" Src="AccountInit/CTLLogManage.aspx" />
+    <SubMenu Name="清产核资导入" Src="ResManage/ImportData.aspx" />
+    <SubMenu Name="数据备份恢复" Src="AccountInit/MDatabase.aspx" />
+    <SubMenu Name="密码修改" Src="ChangePassword.aspx" />
+  </Menu>
+  <Menu Name="账务处理">
+    <SubMenu Name="填制凭证" Src="AccountManage/DoVoucher.aspx" />
+    <SubMenu Name="审核凭证" Src="AccountManage/VoucherAM.aspx" />
+    <SubMenu Name="凭证记账" Src="AccountManage/VoucherRM.aspx" />
+    <SubMenu Name="月末结转" Src="AccountManage/MonthCarryForward.aspx" />
+    <SubMenu Name="年末结转" Src="AccountManage/YearCarryForward.aspx" />
+    <SubMenu Name="合同管理" Src="Contract/ContractList.aspx" use="0" />
+    <SubMenu Name="合同台账" Src="Contract/LeaseContractDetail.aspx" use="0" />
+  </Menu>
+  <Menu Name="代管资金">
+    <SubMenu Name="代管资金日记账" Src="BillManage/JournalList.aspx?flag=102" />
+    <SubMenu Name="代管资金汇总表" Src="BillManage/DetailAccountDay.aspx" />
+  </Menu>
+  <Menu Name="六步工作流程">
+    <SubMenu Name="批办卡认证（支出）" Src="view/PiBanKa.aspx" />
+    <SubMenu Name="票据识别（收入）" Src="view/uploadPic.aspx" />
+    <SubMenu Name="批办卡管理" Src="view/PiBanKa/index.aspx" />
+    <SubMenu Name="批办卡打印" Src="view/templates/pibanka.html" />
+    <SubMenu Name="权利人管理" Src="view/users/index.aspx" />
+    <SubMenu Name="民主测评录入" Src="view/CePing/cpjg.aspx" />
+    <SubMenu Name="民主测评管理" Src="view/CePing/cpjggl.aspx" />
+  </Menu>
+  <Menu Name="账簿查询">
+    <SubMenu Name="总账查询" Src="AccountQuery/GeneralLedger.aspx" />
+    <SubMenu Name="明细分类账" Src="AccountQuery/DetailAccount.aspx" />
+    <SubMenu Name="总账余额表" Src="AccountQuery/GeneralBalance.aspx" />
+    <SubMenu Name="科目余额表" Src="AccountQuery/SubjectBalanceDay.aspx" />
+    <SubMenu Name="应收账款查询" Src="AccountQuery/AccountsReceivable.aspx" />
+    <SubMenu Name="应付账款查询" Src="AccountQuery/AccountsPayable.aspx" />
+    <SubMenu Name="凭证列表查询" Src="AccountQuery/VoucherList.aspx" />
+    <SubMenu Name="凭证单张查询" Src="AccountQuery/VoucherPage.aspx" />
+    <SubMenu Name="凭证打印输出" Src="AccountQuery/PrintVoucher.aspx" />
+  </Menu>
+  <Menu Name="报表查询">
+    <SubMenu Name="科目余额汇总表" Src="AccountQuery/SubjectBalance.aspx" />
+    <SubMenu Name="收支明细表" Src="AccountQuery/CommReport.aspx?DesignID=000003" />
+    <SubMenu Name="资产负债表" Src="AccountQuery/CommReport.aspx?DesignID=000004" />
+    <SubMenu Name="收益分配表" Src="AccountQuery/IncomeDistribution.aspx" />
+    <SubMenu Name="财务公开榜(月表)" Src="AccountQuery/CommReport.aspx?DesignID=000006" />
+    <SubMenu Name="财务公开榜(季表)" Src="AccountQuery/QuarterReport.aspx" />
+    <SubMenu Name="内部往来余额表" Src="AccountQuery/InternalDemand.aspx" />
+    <SubMenu Name="收支逐笔公开榜" Src="AccountQuery/EachAccPublish.aspx" />
+    <SubMenu Name="自定义报表管理" Src="AccountQuery/DefineReportList.aspx" />
+    <SubMenu Name="村务公开表录入" Src="view/GongKai/Add.aspx" />
+    <SubMenu Name="村务公开表管理" Src="view/GongKai/manage1.aspx" />
+    <SubMenu Name="自定义公开表管理" Src="view/GongKai/lblist.aspx" />
+    <SubMenu Name="自定义公开样表管理" Src="view/GongKai/addlb.aspx" />
+  </Menu>
+  <Menu Name="报表分析">
+    <SubMenu Name="村级收入情况" Src="AccountQuery/Analysis04.aspx?QType=0" />
+    <SubMenu Name="村级支出情况" Src="AccountQuery/Analysis04.aspx?QType=1" />
+    <SubMenu Name="村级福利费收入表" Src="AccountQuery/Analysis04.aspx?QType=2" />
+    <SubMenu Name="村级福利费支出表" Src="AccountQuery/Analysis04.aspx?QType=3" />
+    <SubMenu Name="财务收支分析表" Src="AccountQuery/Analysis01.aspx" />
+    <SubMenu Name="福利费收支分析表" Src="AccountQuery/Analysis02.aspx" />
+    <SubMenu Name="资产负债分析表" Src="AccountQuery/Analysis03.aspx" />
+  </Menu>
+  <Menu Name="安全退出" Src="TargetSelf" />
+</Menus>

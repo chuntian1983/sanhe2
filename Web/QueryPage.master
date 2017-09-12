@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="_QueryPage" Codebehind="QueryPage.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>村级查询平台</title>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<%--<style type="text/css">html{overflow:hidden;}</style>--%>
+<style type="text/css">
+Body
+{
+SCROLLBAR-FACE-COLOR:#FFCCCC;
+SCROLLBAR-HIGHLIGHT-COLOR:#f6f6f6;
+SCROLLBAR-ARROW-COLOR:green;
+SCROLLBAR-BASE-COLOR:#f6f6f6;
+SCROLLBAR-SHADOW-COLOR:#f6f6f6;
+SCROLLBAR-DARKSHADOW-COLOR:#FFCCCC;
+SCROLLBAR-3DLIGHT-COLOR:#FFCCCC;
+SCROLLBAR-TRACK-COLOR:#f6f6f6;
+}
+</style>
+<link type="text/css" href="Images/css.css" rel="Stylesheet" />
+<script language="JavaScript" type="text/javascript">
+<!--
+function $(o){return (typeof(o)=="object")?o:document.getElementById(o);}
+function OpenUrl(url)
+{
+    document.frames["ctl00_ContentPlaceHolder1_mFrame"].location.href=url;
+}
+//-->
+</script>
+</head>
+<body id="PageBody" class="margin1">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tr>
+                <td class="t1" style="width: 203px; text-align: center;" valign="top">
+                <table cellpadding="0" cellspacing="0" style="width: 203px;">
+                    <tr>
+                        <td style="background: #f6f6f6; height: 24px; padding-left:7px; text-align:left">
+                            查询站点：<asp:Label ID="AName" runat="server" ForeColor="Red"></asp:Label></td>
+                    </tr>
+                    <tr>
+                        <td class="t3" style="text-align: center; height: 550px; vertical-align:top; text-align:left">
+                        <div style="WIDTH: 100%; HEIGHT: 100%; overflow-y:scroll;">
+                            <asp:TreeView ID="TreeView1" runat="server" ExpandDepth="1" ImageSet="XPFileExplorer"
+                                NodeIndent="15" ShowLines="True">
+                                <ParentNodeStyle Font-Bold="False" />
+                                <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+                                <SelectedNodeStyle BackColor="#F6F6F6" BorderStyle="Solid" BorderWidth="1px" Font-Underline="False"
+                                    HorizontalPadding="0px" VerticalPadding="0px" />
+                                <Nodes>
+                                    <asp:TreeNode SelectAction="None" Text="村级查询模块" Value="000000"></asp:TreeNode>
+                                </Nodes>
+                                <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="2px"
+                                    NodeSpacing="0px" VerticalPadding="2px" />
+                            </asp:TreeView>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 24px; text-align:center; border-bottom:1px solid #f6f6f6">
+                        <a href="ChangePassword.aspx" target="mFrame">密码修改</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="HomePage.aspx" target="mFrame">返回首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="LoginOut.aspx">安全退出</a>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                <td class="t1" style="height: 606px; width: 801px" valign="top">
+                <div><asp:contentplaceholder id="ContentPlaceHolder1" runat="server"></asp:contentplaceholder></div>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </form>
+</body>
+</html>
